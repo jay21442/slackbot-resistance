@@ -71,11 +71,11 @@ public class ResistanceBot {
                 }
             } else if (message.contains("done")) {
                 //check if there's enough players
-                if (botState.getPlayers().size() >= 5) {
+                if (botState.getPlayers().size() >= 2) {
                     //start the game, send out all the player roles
                     startGame();
                 } else {
-                    botState.sendPublicMessage("Sorry, you need at least 5 players. Currently only " +
+                    botState.sendPublicMessage("Sorry, you need at least 2 players. Currently only " +
                             botState.getPlayers().size() + " people are playing.");
                 }
 
